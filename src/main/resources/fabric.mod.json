@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "rk-mod",
+	"version": "${version}",
+	"name": "RK Mod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/rk-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"com.rkmod.homo.RKModClient"
+		],
+		"main": [
+          "com.rkmod.homo.RKMod"
+		],
+		"fabric-datagen": [
+			"com.rkmod.homo.RKModDataGenerator"
+		]
+	},
+	"mixins": [
+		"rk-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.19.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
